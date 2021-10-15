@@ -1,16 +1,15 @@
 <?php
 
-use GisoStallenberg\FileServing\FileServer;
+use ConnectHolland\FileServing\FileServer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ServerBag;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Unit test for the file server
- *
- * @author Giso Stallenberg
  */
-class FileServerTest extends PHPUnit_Framework_TestCase
+class FileServerTest extends TestCase
 {
     /**
      * Test to see that files are found as expected.
@@ -26,11 +25,8 @@ class FileServerTest extends PHPUnit_Framework_TestCase
      */
     public function testFilesFound($from, $to, $filename, $url, $expectedStatusCode, $expectedContent)
     {
-        $request = $this
-            ->getMockBuilder(Request::class)
-            ->disableOriginalConstructor()->getMock()
-        ;
-        $request->server = $this->getMockBuilder(ServerBag::class)->getMock();
+        $request = $this->createMock(Request::class);
+        $request->server = $this->createMock(ServerBag::class);
         $request
             ->server
             ->expects($this->any())
