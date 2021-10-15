@@ -1,14 +1,12 @@
 <?php
 
-use GisoStallenberg\FileServing\FileServer;
+use ConnectHolland\FileServing\FileServer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ServerBag;
 
 /**
  * Unit test for the file server
- *
- * @author Giso Stallenberg
  */
 class FileServerTest extends PHPUnit_Framework_TestCase
 {
