@@ -1,5 +1,5 @@
 {
-    "name": "connectholland/file-serving",
+    "name": "gisostallenberg/file-serving",
     "description": "Serve files to the browser that are not available directly",
     "type": "library",
     "require": {
@@ -9,13 +9,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Connect Holland",
-            "email": "info@connectholland.nl"
+            "name": "Giso Stallenberg",
+            "email": "gisostallenberg@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "ConnectHolland\\FileServing\\": "src/"
+            "GisoStallenberg\\FileServing\\": "src/"
         }
     },
     "require-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-use ConnectHolland\FileServing\FileServer;
+use GisoStallenberg\FileServing\FileServer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ServerBag;
@@ -8,6 +8,8 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Unit test for the file server
+ *
+ * @author Giso Stallenberg
  */
 class FileServerTest extends TestCase
 {
