@@ -1,6 +1,6 @@
 <?php
 
-namespace ConnectHolland\FileServing;
+namespace GisoStallenberg\FileServing;
 
 use DateTime;
 use Symfony\Component\HttpFoundation\File\File;
